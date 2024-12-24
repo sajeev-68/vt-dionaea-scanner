@@ -25,7 +25,7 @@ def getreports(bins, api_key):
             sandbox_verdicts=response.get('sandbox_verdicts'),
             total_votes=response.get('total_votes')
 
-        new_name = "/home/sssajeev682/tpotce/data/dionaea/binaries/"+meaningful_name + ".details"
+        new_name = "/home/<ur_directory_here>/tpotce/data/dionaea/binaries/"+meaningful_name + ".details"  #change directory name to reflect your system
         
         f1 = open(new_name, "x")
         data = str(str(now) +"\n" +meaningful_name+"\n"+label+"\n"+str(reputation)+"\n"+"-------------------------------\n")
@@ -35,9 +35,9 @@ def getreports(bins, api_key):
         data3 = meaningful_name + ".details" + "\n" + meaningful_name + "\n"
         f3.write(data3)
 
-        old_file = "/home/sssajeev682/tpotce/data/dionaea/binaries/" + i
+        old_file = "/home/<ur_directory_here>/tpotce/data/dionaea/binaries/" + i  #change directory name to reflect your system
 
-        new_meaningful_name = "/home/sssajeev682/tpotce/data/dionaea/binaries/" + meaningful_name    
+        new_meaningful_name = "/home/<ur_directory_here>/tpotce/data/dionaea/binaries/" + meaningful_name  #change directory name to reflect your system    
         os.rename(old_file, new_meaningful_name)
         f1.close()
         f.close()
