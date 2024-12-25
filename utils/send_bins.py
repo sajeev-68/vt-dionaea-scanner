@@ -9,9 +9,9 @@ def getreports(bins, api_key):
 
     for i in bins:
 
-        f = open("file.log", 'w')
-        f2 = open("master.log", "w")
-        f3 = open("files.txt","w")
+        f = open("file.log", 'a')
+        f2 = open("master.log", "a")
+        f3 = open("files.txt","a")
         f2.write(str(now))
         f2.write("\n[i]  New file found Hash, getting reports!\n")
 
